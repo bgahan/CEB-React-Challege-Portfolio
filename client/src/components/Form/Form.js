@@ -14,6 +14,10 @@ const Form = () => {
           setError('You must enter a valid name')
           return
         }
+        if (document.getElementById('message').value === '') {
+          setError('You must enter a message')
+          return
+        }
         setError('')
         setSuccessful('Form Submitted!')
     }
@@ -23,6 +27,8 @@ const Form = () => {
         <input id='email' type="text" placeholder='email' />
         <br/>
         <input id='name' type="text" placeholder='name' />
+        <br />
+        <input id='message' type="text" placeholder='message' />
         <br />
         <button onClick={handleFormSubmit}>submit</button>
         <br />
