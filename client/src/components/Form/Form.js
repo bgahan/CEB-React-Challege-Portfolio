@@ -1,40 +1,65 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
+import { validateEmail } from '../../utils/helpers';
 
 const Form = () => {
+  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
-  const [error, setError] = useState('')
-  const [successful, setSuccessful] = useState('')
+  const { name, email, message } = formState;
 
-    function handleFormSubmit() {
-        if (document.getElementById('email').value === '') {
-          setError('You must enter a valid email')
-          return
-        }
-        if (document.getElementById('name').value === '') {
-          setError('You must enter a valid name')
-          return
-        }
-        if (document.getElementById('message').value === '') {
-          setError('You must enter a message')
-          return
-        }
-        setError('')
-        setSuccessful('Form Submitted!')
+  const [errorMessage, setErrorMessage] = useState('');
+
+
+  function handleChange(e) {
+    if (e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+      console.log(isValid);
+      // isValid conditional statement
+      if (!isValid) {
+        setErrorMessage('Your email is invalid.');
+      } else {
+        setErrorMessage('');
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage('');
+      }
     }
 
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
-    <div>
-        <input id='email' type="text" placeholder='email' />
-        <br/>
-        <input id='name' type="text" placeholder='name' />
-        <br />
-        <input id='message' type="text" placeholder='message' />
-        <br />
-        <button onClick={handleFormSubmit}>submit</button>
-        <br />
-        <p style={{color: 'red'}}>{error}</p>
-        <p style={{color: 'green'}}>{successful}</p>
-    </div>
+    <section>
+      <h1>Contact me</h1>
+      <form id="contact-form" onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name">Name:</label>
+          <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+        </div>
+        <div>
+          <label htmlFor="email">Email address:</label>
+          <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
+        </div>
+        <div>
+          <label htmlFor="message">Message:</label>
+          <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+        </div>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   )
 }
 
