@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './resume.css';
 
 const Resume = () => {
   return (
-    <div>Resume</div>
+    <div className='resume'>
+      <h1>Resume</h1>
+      <h2>Skills</h2>
+    </div>
   )
 }
 

@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './portfolio.css';
 
 const Portfolio = () => {
   return (
-    <div>
-        
+    <div className='portfolio'>
+      <h1>Portfolio</h1>
     </div>
   )
 }

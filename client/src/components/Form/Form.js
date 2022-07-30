@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import '../../pages/Contact/contact.css';
+
 
 const Form = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -37,19 +39,21 @@ const Form = () => {
   }
 
   return (
-    <section>
-      <h1>Contact me</h1>
+    <div className='contact-form'>
+      <h1>Contact Me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Name: </label>
+          <br />
           <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
         </div>
         <div>
-          <label htmlFor="email">Email address:</label>
+          <label htmlFor="email">Email address: </label>
+          <br />
           <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message">Message: </label>
           <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
         </div>
         {errorMessage && (
@@ -59,7 +63,7 @@ const Form = () => {
         )}
         <button type="submit">Submit</button>
       </form>
-    </section>
+    </div>
   )
 }
 

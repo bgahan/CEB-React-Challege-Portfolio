@@ -1,11 +1,11 @@
-import React from 'react'
-import Form from '../../components/Form/Form'
+import React from 'react';
+import Form from '../../components/Form/Form';
+import './contact.css';
 
 const Contact = () => {
     
   return (
     <div>
-      <h1>Contact Form</h1>
       <Form />
     </div>
 
