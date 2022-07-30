@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 35px;
-    background: linear-gradient(rgb(137, 239, 137), rgb(27, 247, 247));
+    background: linear-gradient(#FF8360, #01BAEF);
     font-family: fantasy;
     font-size: 18px;
     top: 0;
@@ -11,13 +11,14 @@
 }
 
 .header-title {
-    color: rgb(139, 38, 139);
+    color: #ACFCD9;
     font-weight: bolder;
 }
 
 .header-nav {
     display: flex;
     gap: 10px;
+    color: #ACFCD9;
 }
 
 .header-nav>li {
@@ -26,10 +27,11 @@
 }
 
 .header-nav>li>a {
+    color: #ACFCD9;
     text-decoration: none;
 }
 
 .current-path {
     font-weight: 800 !important;
-    color: rgb(255, 255, 3);
+    color: #140D4F;
 }

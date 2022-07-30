@@ -3,12 +3,13 @@
     align-items: center;
     justify-content: space-around;
     padding: 20px 35px;
-    background: linear-gradient(rgb(137, 239, 137), rgb(27, 247, 247));
+    background: linear-gradient(#01BAEF, #FF8360);
     font-family: fantasy;
     font-size: 18px;
     position: absolute;
     bottom: 0;
     width: 100%;
+    
 }
 
 .footer-nav>li {
@@ -17,5 +18,5 @@
 }
 
 .footer-nav>li>a {
-    text-decoration: none;
+    color: #ACFCD9;;
 }
