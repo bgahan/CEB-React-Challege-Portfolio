@@ -2,10 +2,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 35px;
+    background: linear-gradient(rgb(137, 239, 137), rgb(27, 247, 247));
+    font-family: fantasy;
+    font-size: 18px;
+    top: 0;
+
 }
 
-
+.header-title {
+    color: rgb(139, 38, 139);
+    font-weight: bolder;
+}
 
 .header-nav {
     display: flex;
@@ -14,6 +22,7 @@
 
 .header-nav>li {
     list-style-type: none;
+    margin: 7px 0;
 }
 
 .header-nav>li>a {
@@ -22,5 +31,5 @@
 
 .current-path {
     font-weight: 800 !important;
-    color: var(--testing);
+    color: rgb(255, 255, 3);
 }

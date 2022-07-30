@@ -1,0 +1,21 @@
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 35px;
+    background: linear-gradient(rgb(137, 239, 137), rgb(27, 247, 247));
+    font-family: fantasy;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav>li {
+    list-style-type: none;
+    margin: 7px 0;
+}
+
+.footer-nav>li>a {
+    text-decoration: none;
+}
