@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <div className='resume'>
       <h1>Resume</h1>
-      <p>Download my <a href="./resume.pdf" download="resume.pdf">resume</a></p>
+      <p>Download my <a href={require("../../images/resume.txt")} download="resume.txt">resume</a></p>
       <h2>Skills</h2>
       <div className='skills'>
         <ul> Front-End
