@@ -7,7 +7,11 @@ Aug 2021 - Present · 1 yr
 o Manager of the API Edge Services team that supports backend services for Disney+, ESPN+, Hulu, and Star+.
 o Team mission is to build highly available, high throughput services that are critical to delivering high quality content to our subscribers.
 o Seek to optimize the team to deliver functionality while maintaining a resilient, extensible, highly available distributed system
-o Establishing engineering best practices and standards within the team to drive quality and excellenceo Manager of the API Edge Services team that supports backend services for Disney+, ESPN+, Hulu, and Star+. o Team mission is to build highly available, high throughput services that are critical to delivering high quality content to our subscribers. o Seek to optimize the team to deliver functionality while maintaining a resilient, extensible, highly available distributed system o Establishing engineering best practices and standards within the team to drive quality and excellence
+o Establishing engineering best practices and standards within the team to drive quality and excellence
+o Manager of the API Edge Services team that supports backend services for Disney+, ESPN+, Hulu, and Star+. 
+o Team mission is to build highly available, high throughput services that are critical to delivering high quality content to our subscribers. 
+o Seek to optimize the team to deliver functionality while maintaining a resilient, extensible, highly available distributed system 
+o Establishing engineering best practices and standards within the team to drive quality and excellence
 
 Senior Technical Project Manager
 Mar 2020 - Aug 2021 · 1 yr 6 mosM
