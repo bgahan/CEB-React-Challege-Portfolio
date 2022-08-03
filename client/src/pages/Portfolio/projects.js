@@ -2,7 +2,7 @@ let data = [
     {
         "projectId": 1,
         "projectName": "Travel Easy",
-        "projectImg": "../images/travel-easy.png",
+        "projectImg": "travel-easy.png",
         "projectUrl": "https://bgahan.github.io/CEBC-Project-1/",
         "projectGithub": "https://github.com/bgahan/CEBC-Project-1"
     },

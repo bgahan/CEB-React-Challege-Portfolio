@@ -16,6 +16,10 @@
     color: #ACFCD9;
 }
 
+.portfolio img {
+    max-width: 150px;
+}
+
 .projects {
     display: flex;
 }
@@ -25,3 +29,4 @@
     margin: 10px;
     padding: 10px;
 }
+
