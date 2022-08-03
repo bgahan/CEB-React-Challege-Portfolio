@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/CEB-React-Challege-Portfolio/static/css/main.550aced0.css",
+    "main.js": "/CEB-React-Challege-Portfolio/static/js/main.98515042.js",
+    "static/media/travel-easy.png": "/CEB-React-Challege-Portfolio/static/media/travel-easy.893a82b451a78c3171de.png",
+    "static/media/profile-picture.png": "/CEB-React-Challege-Portfolio/static/media/profile-picture.61f59a1b7dc91bcf14ff.png",
+    "static/media/resume.txt": "/CEB-React-Challege-Portfolio/static/media/resume.6891aba3844100dc9385.txt",
+    "index.html": "/CEB-React-Challege-Portfolio/index.html",
+    "main.550aced0.css.map": "/CEB-React-Challege-Portfolio/static/css/main.550aced0.css.map",
+    "main.98515042.js.map": "/CEB-React-Challege-Portfolio/static/js/main.98515042.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.550aced0.css",
+    "static/js/main.98515042.js"
+  ]
+}
