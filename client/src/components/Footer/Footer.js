@@ -5,8 +5,9 @@ const Footer = () => {
   return (
     <div>
         <ul className='footer-nav'>
-                        <li><a href="/">GitHub</a></li>
-                        <li><a href="/">LinkedIn</a></li>
+                        <li><a href="https://github.com/bgahan">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/brittany-gahan/">LinkedIn</a></li>
+                        <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
                     </ul>
     </div>
   )

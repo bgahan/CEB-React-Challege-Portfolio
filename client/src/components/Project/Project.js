@@ -1,16 +1,20 @@
 import React from 'react'
 
-const Project = () => {
-  return (
-    <div>Project</div>
-    // <article class="project">
-    //     {/* <h3 class="project-name">Robot Gladiators</h3>
-    //     <a href="https://bgahan.github.io/robot-gladiators/" target="_blank">
-    //       <img src="./assets/images/future-project-2.jpeg" alt="Robot Gladiators Image"
-    //         title="Robot Gladiators Project">
-    //     </a> */}
-    //   </article>
-  )
+const Project = (props) => {
+
+    let { data } = props
+
+    console.log(data)
+    return (
+        <div>
+            <h3 className="project-name">{data.projectName}</h3>
+            <a href={data.projectUrl} target="_blank">
+                <img src={data.projectImg} alt={data.projectName}
+                    title={data.projectName} />
+            </a>
+            <a href={data.projectGithub} target="_blank">GitHub Repo</a>
+        </div>
+    )
 }
 
 export default Project
